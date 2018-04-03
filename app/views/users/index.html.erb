@@ -1,5 +1,1 @@
-<% if current_user && !current_user.mustangs.empty?%>
-  <%=link_to "Favorite Mustangs", user_path(current_user)%>
-<% elsif current_user %>
-  <%=link_to "View Mustang Specs", mustangs_path%>
-<% end %>
+<%=link_to "View Mustang Specs", mustangs_path%>
