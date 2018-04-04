@@ -1,6 +1,5 @@
-<%@mustangs.each do |car|%>
-    Name: <%=car.name%><br>
-    Year: <%=car.year%><br>
-    0 - 60: <%=car.to_sixty%><br>
-    1/4 Mile: <%=car.quarter_mile%><br><br>
-  <% end %>
+Please select a year: 1964 - 2018
+<%= form_tag '/year' do %>
+  <%= text_field_tag :year%>
+  <%= submit_tag "Submit" %><br><br>
+<% end %>

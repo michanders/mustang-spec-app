@@ -5,6 +5,8 @@ class MustangsController < ApplicationController
   end
 
   def show
+    @year = params[:year]
+
   end
 
   def index

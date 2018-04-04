@@ -1,1 +1,12 @@
-mustang show page
+Mustang Specs By Year: <br><br>
+<%@mustangs.each do |car|%>
+  <% if car.year === params[:year] %>
+    Name: <%=car.name%><br>
+    Year: <%=car.year%><br>
+    0 - 60: <%=car.to_sixty%><br>
+    1/4 Mile: <%=car.quarter_mile%><br><br>
+  <% end %>
+<% end %>
+<% if !@years.include?(@year) %>
+  There may not be specs for that year. <%= link_to "Please Try Again", mustangs_path %>
+<%end%>

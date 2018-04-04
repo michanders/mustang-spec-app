@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   post '/users' => 'users#create'
 
   get '/new_mustang' => 'mustangs#create'
+
+  get '/year' => 'mustangs#show'
+  post '/year' => 'mustangs#show'
+
 end
