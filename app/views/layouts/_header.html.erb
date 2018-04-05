@@ -1,8 +1,8 @@
-<nav class="">
+<nav class="navbar">
   <%if current_user%>
       <h4>Signed in as <%= current_user.username %> | <%= link_to "Home", '/' %> | <%= link_to "Logout", '/logout' %></h4>
   <%else%>
-    <%= link_to 'Signup', '/signup' %> | <%= link_to 'Login', '/login' %> | <%= link_to "User Home", root_path %>
-    | <%= link_to "New Year", mustangs_path %> <br><br>
+    <%= link_to 'Signup', '/signup' %> | <%= link_to 'Login', '/login' %> | <%= link_to "User Home", root_path %><br><br>
+    <%= link_to "View Mustang Specs", mustangs_path %> <br><br>
   <%end%>
 </nav>
