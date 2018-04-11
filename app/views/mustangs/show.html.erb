@@ -1,11 +1,11 @@
-Mustang Specs By Year: <br><br>
+<h2>Mustang Specs By Year:</h2> <br><br>
 <%@mustangs.each do |car|%>
   <% if car.year === params[:year] %>
     <div class = "car">
-      Name: <%=car.name%><br>
-      Year: <%=car.year%><br>
-      0 - 60: <%=car.to_sixty%><br>
-      1/4 Mile: <%=car.quarter_mile%><br><br>
+      <h3>Name:</h3> <%=car.name%><br>
+      <h3>Year:</h3> <%=car.year%><br>
+      <h3>0 - 60:</h3> <%=car.to_sixty%><br>
+      <h3>1/4 Mile:</h3> <%=car.quarter_mile%><br>
     </div>
   <% end %>
 <% end %>

@@ -21,4 +21,38 @@ body {
   border-right: 5px solid green;
   border-bottom: 5px dotted green;
   text-align: center;
-};
+}
+
+body {
+  max-width: 500px;
+  margin: auto;
+  border-left: 5px solid green;
+  border-right: 5px solid green;
+  border-bottom: 5px solid green;
+  text-align: center;
+}
+
+.navbar {
+  border-bottom: 5px dotted green;
+}
+
+.car {
+  margin-left: 127px;
+  margin-right: 150px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  border-bottom: 2px dotted darkgreen;
+}
+
+h3 {
+  display: inline;
+  color: darkgreen;
+  border-bottom: 1px dotted darkgreen;
+}
+
+h1, h2 {
+  display: inline;
+}

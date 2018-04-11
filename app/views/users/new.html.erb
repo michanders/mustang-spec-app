@@ -1,8 +1,9 @@
+<h2>Signup:</h2><br><br>
 <%= form_for :user, url: '/users' do |f| %>
 
-  Username: <%= f.text_field :username, :autocomplete => :off %>
-  Password: <%= f.password_field :password, :autocomplete => :off %>
+  Username: <%= f.text_field :username, :autocomplete => :off %><br>
+  Password: <%= f.password_field :password, :autocomplete => :off %><br>
   Password Confirmation: <%= f.password_field :password_confirmation, :autocomplete => :off %>
-  <%= f.submit "Submit" %>
+  <%= f.submit "Submit" %><br><br>
 
 <% end %>
