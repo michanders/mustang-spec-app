@@ -1,4 +1,4 @@
-<h2>Mustang Specs For <%=params[:year]%></h2> <br><br>
+<h2><%=params[:year]%> Mustang Specs</h2> <br><br>
 <%@mustangs.each do |car|%>
   <% if car.year === params[:year] %>
     <div class = "car">
